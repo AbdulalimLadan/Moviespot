@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:background="@color/colorBlack">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profile_picture"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_gravity="center"
+            android:src="@drawable/profile_placeholder"
+            app:civ_border_color="@color/colorAccent"
+            android:layout_centerInParent="true"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingEnd="10dp"
+        android:paddingStart="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?android:selectableItemBackground"
+            android:gravity="center_vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Full name"
+                android:textColor="#000"
+                android:textSize="16sp"/>
+            <TextView
+                android:id="@+id/profile_full_name"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:textSize="13sp"
+                android:textAlignment="viewEnd"
+                android:ellipsize="end"
+                android:maxEms="5"
+                android:layout_alignParentEnd="true"/>
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:background="#818181"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?android:selectableItemBackground"
+            android:gravity="center_vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Email"
+                android:textColor="#000"
+                android:textSize="16sp"/>
+            <TextView
+                android:id="@+id/profile_email"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:textSize="13sp"
+                android:textAlignment="viewEnd"
+                android:ellipsize="end"
+                android:maxEms="5"
+                android:layout_alignParentEnd="true"/>
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:background="#818181"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?android:selectableItemBackground"
+            android:gravity="center_vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Username"
+                android:textColor="#000"
+                android:textSize="16sp"/>
+            <TextView
+                android:id="@+id/profile_username"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:textSize="13sp"
+                android:textAlignment="viewEnd"
+                android:ellipsize="end"
+                android:maxEms="5"
+                android:layout_alignParentEnd="true"/>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:background="#818181"/>
+
+        <TextView
+            android:id="@+id/profile_signout"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#F4F4F4"
+            android:layout_marginTop="30dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?android:selectableItemBackground"
+            android:gravity="center"
+            android:text="SIGN OUT"
+            android:textColor="#ff0000"
+            android:textSize="16sp"/>
+
+    </LinearLayout>
+
+</LinearLayout>
